@@ -1,5 +1,10 @@
+body {
+    font-family: 'Star Wars', sans-serif;
+  }
+
 .home-container {
-    background-color: #1c1c1c; 
+    background: rgba(28, 28, 28, 0.8); /* Fondo negro semi-transparente */
+    color: white; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -42,18 +47,15 @@
 }
 
 .card {
-    background-color: #ffffff; 
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
-    padding: 10px;
-    width: 150px; 
-    text-align: center; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease;
-    margin-right: 10px;
-    flex-shrink: 0;
+    background-color: #1c1c1c;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); /* Sombra más prominente al pasar el mouse */
 }

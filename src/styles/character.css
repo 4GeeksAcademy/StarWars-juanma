@@ -1,3 +1,10 @@
+.character-name {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: rgba(200, 50, 50, 0.7);
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7); /* Sombra para resaltar el texto */
+}
+
 .character-container {
     background-color: #1c1c1c;
     color: white;
@@ -37,11 +44,11 @@
 }
 
 .details-column {
-    flex: 1;
-    margin: 10px;
-    background-color: #333;
-    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
+    color: white;
+    padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Sombra sutil */
 }
 
 .details-column h3 {

@@ -1,3 +1,11 @@
+body {
+    font-family: 'Star Wars', sans-serif;
+    background: url('https://www.muyinteresante.com/wp-content/uploads/sites/5/2023/10/26/653a70fe92542.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+       
+  }
+
 .custom-navbar {
     background-color: black;
     padding: 10px 50px;
@@ -11,14 +19,20 @@
 }
 
 .dropdown .btn-warning {
-    background-color: gold; 
-    color: black; 
-    border: none;
+    background-color: transparent;
+    border: 2px solid #f39c12;
+    color: #f39c12;
     font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
 }
 
 .dropdown .btn-warning:hover {
-    background-color: yellow; 
+    background-color: #f39c12;
+    color: black;
+    box-shadow: 0 0 10px #f39c12; /* Brillo en hover */
 }
 
 .dropdown-menu {
@@ -53,4 +67,16 @@
 
 .footer .fa-heart {
     color: red;
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.star {
+    font-size: 50px;
+    color: #fff;
+    animation: blink 1.5s infinite; /* Estrella parpadeante */
 }

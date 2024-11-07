@@ -15,7 +15,7 @@ export const Navbar = () => {
 
             <div className="dropdown ml-auto">
                 <button className="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                    Favoritos <span className="favorite-count">({favorites.length})</span>
+                    F a v o r i t o s <span className="favorite-count">({favorites.length})</span>
                 </button>
                 <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                     {favorites.length > 0 ? (
